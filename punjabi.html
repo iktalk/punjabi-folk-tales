@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folk Tales from Punjab</title>
+
+    <style>
+      body {
+        background: linear-gradient(102.7deg, #f9f6f7, #ffe8d6, #ff971d);
+        max-width: 750px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .summary {
+        background: white;
+        text-align: center;
+        padding: 20px 40px 20px 40px;
+        margin: 50px;
+        border: 20px solid white;
+        border-radius: 25px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ea7659;
+        text-transform: uppercase;
+        margin: 10px 0px;
+      }
+
+      h2 {
+        font-size: 100%;
+        text-align: center;
+        color: #c1c1c1;
+        font-weight: lighter;
+        text-transform: lowercase;
+      }
+
+      strong {
+        text-transform: uppercase;
+        margin: 10px 10px;
+        display: block;
+        color: #ea7659;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: "Times New Roman", Times, serif;
+        padding: 5px 5px;
+        text-transform: lowercase;
+        line-height: 15px;
+        color: #c1c1c1;
+      }
+
+      .buttonLink {
+        font-size: 12px;
+        text-transform: lowercase;
+        margin: 0px 0px 20px 0px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ea7659;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        border: 8px solid #ea7659;
+        border-radius: 6px;
+      }
+
+      button:hover {
+        background: #f9f6f7;
+        color: #ea7659;
+        cursor: pointer;
+      }
+
+      button {
+        padding: 10px 10px 10px 10px;
+        background-color: #ffe8d6;
+        transition: all 200ms ease-in-out;
+        border-radius: 6px;
+        border-color: #ffe8d6;
+        font-family: "Times New Roman", Times, serif;
+        text-transform: lowercase;
+        box-shadow: 5px 5px 5px #f9f6f7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="summary">
+      <h1>Punjabi Folk Tales</h1>
+      <h2>
+        <em>
+          Punjabi folklore, particularly the folksongs, is said to be the
+          autobiography of its people. This website will look at bringing one
+          punjbai folktale to its readers every week.</em
+        >
+        <hr />
+      </h2>
+      <p>
+        <strong> Sohni Mahiwal</strong> <br />
+        Sohni Mahiwal is a tragic love story and one of the most popular from
+        the region of Punjab. The heroine Sohni, unhappily married to a man she
+        despises, swims every night across the river using an earthenware pot to
+        keep afloat in the water, to where her beloved Mehar herds buffaloes.
+        One night her sister-in-law replaces the earthenware pot with a vessel
+        of unbaked clay, which dissolves in water and she dies in the whirling
+        waves of the river just beyond the reach of her beloved.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/363/original/Sohni-Mahiwal___2012__oil__18x24__Collection_Deepak_Varma__Bangalore.jpeg?1630377008"
+        alt="sohni mahiwal painting"
+      />
+      <br />
+
+      <p class="buttonLink">
+        To read the tragic love story of Sohni Mahiwal in its entirety
+        <a href="https://en.wikipedia.org/wiki/Sohni_Mahiwal"> click here.</a>
+      </p>
+
+      <button>Tell Me Stories</button>
+    </div>
+    <script>
+      function greetUser() {
+        let language = prompt("Do you speak Punjabi?");
+        let firstName = prompt("What is your first name?");
+        let lastName = prompt("What is your last name?");
+        let fullName = firstName + " " + lastName;
+        prompt("What is your email?");
+
+        if (language === "Yes") {
+          alert(
+            "Sat Sri Akal" +
+              " " +
+              fullName +
+              "," +
+              " " +
+              "we hope you enjoy the Punjabi Folk Tales!"
+          );
+        } else {
+          alert(
+            "Thank you" +
+              " " +
+              fullName +
+              "," +
+              " " +
+              "we hope you enjoy the Punjabi Folk Tales!"
+          );
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", greetUser);
+    </script>
+  </body>
+</html>
